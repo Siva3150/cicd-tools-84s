@@ -1,5 +1,10 @@
 #!/bin/bash
 
+<<<<<<< HEAD
+=======
+sudo su -
+
+>>>>>>> 08801e0 (user-profile)
 #resize disk from 20GB to 50GB
 growpart /dev/nvme0n1 4
 
