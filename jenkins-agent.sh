@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo su -
+
 #resize disk from 20GB to 50GB
 growpart /dev/nvme0n1 4
 
