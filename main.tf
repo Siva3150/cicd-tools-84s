@@ -109,7 +109,7 @@ resource "aws_instance" "sonarqube" {
   )
 }
 
-resource "aws_security_group" "main" {
+resource "aws_security_group" "sonarqube" {
   name        =  "${var.project}-${var.environment}-sonarqube"
   description = "Created for sonarqube"
 
