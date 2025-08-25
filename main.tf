@@ -92,7 +92,7 @@ resource "aws_route53_record" "jenkins-agent" {
 resource "aws_instance" "sonarqube" {
   ami           = local.ami_id
   instance_type = "t3.large"
-  vpc_security_group_ids = [aws_security_group.main.id]
+  vpc_security_group_ids = [aws_security_group.sonarqube.id]
   subnet_id = "subnet-02f5946970c07b2be" #replace your Subnet
 
   # need more for terraform
