@@ -43,3 +43,8 @@ curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.33.0/2025-05-01/bin/linu
 chmod +x ./kubectl
 sudo mv kubectl /usr/local/bin/kubectl
 kubectl version
+
+#kubens 
+curl -fsSLo /usr/local/bin/kubens  https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens
+curl -fsSLo /usr/local/bin/kubectx https://raw.githubusercontent.com/ahmetb/kubectx/master/kubectx
+sudo chmod +x /usr/local/bin/kubens /usr/local/bin/kubectx
